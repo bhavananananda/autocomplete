@@ -5,7 +5,7 @@
 // Use the input id name "language" for the autocomplete feature <input id="language">
 // Use the input id name "languageCode" for the autocomplete to automatically fill in when the language is selected
 
-languageText = $.ajax({type: "GET", url: "ISO-639-2_utf-8.txt", async: false}).responseText;
+languageText = $.ajax({type: "GET", url: "public/ISO-639-2_utf-8.txt", async: false}).responseText;
 
 var allTextLines = languageText.split(/\r\n|\n/);
 var availableOptions = [];
