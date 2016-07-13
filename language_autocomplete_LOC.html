@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Autocomplete functionality for language from Library of Congress </title>
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <script src="public/javascripts/language_autocomplete_loc.js"></script>
+   </head>
+   <body>
+      <div class="ui-widget">
+        <p> NOTE:  This needs the file to be downloaded and saved in the same directory  =  "http://loc.gov/standards/iso639-2/ISO-639-2_utf-8.txt" </p>
+        <p>Type a minimum of two letters for autocomplete feature to wake up.</p>
+        <div> <label for="language">Choose an option (autocomple feature appears at the 2nd key press). </label> </div>
+        <div> <label for="language">Select from the list of languages as you type, the language code automatically gets filled in: </label> </div>
+
+        <div> LANGUAGE DESCRIPTION: <input id="language"> </div>
+        <div> LANGUAGE CODE:  <input id="languageCode"> </div>
+      </div>
+   </body>
+</html>

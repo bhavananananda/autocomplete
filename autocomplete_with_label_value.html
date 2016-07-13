@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Example below shows the autocomplete functionality from an array supplied through JS </title>
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <script>
+         $(function() {
+            var availableOptions = [
+                  { label: "Label_1", value: "Value_1" },
+                  { label: "Label_2", value: "Value_2" }
+            ];
+            $( "#automplete-1" ).autocomplete(
+            {  minLength:2,
+               source: availableOptions
+            });
+         });
+      </script>
+   </head>
+   <body>
+      <div class="ui-widget">
+         <p>Type "La"</p>
+         <label for="automplete-1">Choose an option (autocomple feature appears at the 2nd key press). </label>
+         <label for="automplete-1">Select from the list of labels, and the corresponding value gets filled in: </label>
+
+         <input id="automplete-1">
+      </div>
+   </body>
+</html>
